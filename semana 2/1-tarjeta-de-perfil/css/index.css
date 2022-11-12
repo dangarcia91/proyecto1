@@ -16,6 +16,7 @@
 
 
 .hero {
+    display: flex;
     background-image: url(https://i.postimg.cc/7PJV8Dp8/react-01-01-wpo.webp);
     background-position: center;
     background-size: cover;
@@ -30,6 +31,9 @@
     overflow: hidden;
 }
 
+.card:hover {
+    border: 0.125rem solid var(--primary-highlight-color);
+}
 .card__header,
 .card__footer {
     background-color: var(--primary-shadow-color);
@@ -70,6 +74,12 @@
     margin: 0;
 }
 
+.card__text::before {
+    content: "😎";
+}
+.card__text::after {
+    content: "💻";
+}
 .menu {
     display: flex;
     justify-content: center;
